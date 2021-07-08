@@ -1,0 +1,411 @@
+html{
+  background-color: #1A1E1F;
+  margin: 0;
+}
+body{
+  height: 100%;
+  width:100%;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  animation: overflow 0.1s linear 3.5s forwards;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+@keyframes overflow {
+  from{overflow-y: hidden;}
+  to{overflow-y: visible;}
+}
+a { color: inherit;
+  text-decoration: none;
+ }
+
+
+
+
+.visible{
+  opacity: 0;
+}
+.opacitychange{
+  animation: opacity 3s ease forwards;
+}
+
+.topright{
+  position: fixed;
+  z-index: 100;
+  width: 200px;
+  top:10px;
+  right:10px;
+  opacity: 0;
+    animation: fadeinout 6s ease-in-out 5s forwards;
+}
+
+@keyframes fadeinout {
+  from{opacity: 0;}
+  to{opacity: 0.4;}
+}
+
+#selectionmenu{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 90;
+  width: 100vw;
+  background-color: #1A1E1F;
+}
+
+.selectitem{
+  color: #C9D6DF;
+  opacity: 0.6;
+  font-size: 3rem;
+  font-family: "Montserrat";
+}
+.StartUpSequence{
+  position:absolute;
+  z-index: 1;
+width:100vw;
+height:100vh;
+background-color: white;
+animation: moveup 1s ease-in-out 3.5s forwards;
+}
+@keyframes moveup {
+  to{transform: translate(0,-100vh);}
+}
+.ThisismeStart{
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+width: 50%;
+height:50%;
+fill: none;
+animation: StartUpSequenceanimation2 0.5s linear 2.5s forwards;
+
+}
+.ThisismeStart path:nth-child(1){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+    animation: StartUpSequenceanimation 1.8s ease-out 1s forwards;
+}
+.ThisismeStart path:nth-child(2){
+ stroke-dasharray: 850px;
+ stroke-dashoffset: 850px;
+     animation: StartUpSequenceanimation 1.8s ease-out 1s forwards;
+}
+.ThisismeStart path:nth-child(3){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+     animation: StartUpSequenceanimation 2.5s ease-out 1s forwards;
+}
+.ThisismeStart path:nth-child(4){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+     animation: StartUpSequenceanimation 1.8s ease-out 1s forwards;
+}
+.ThisismeStart path:nth-child(5){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+     animation: StartUpSequenceanimation 1.8s ease-out 1s forwards;
+}
+.ThisismeStart path:nth-child(6){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+     animation: StartUpSequenceanimation 1.8s ease-out 1s forwards;
+}
+.ThisismeStart path:nth-child(7){
+ stroke-dasharray: 1500px;
+ stroke-dashoffset: 1500px;
+     animation: StartUpSequenceanimation 1.8s ease-out 1s forwards;
+}
+.ThisismeStart path:nth-child(8){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+     animation: StartUpSequenceanimation 1.8s ease-out 1s forwards;
+}
+
+@keyframes StartUpSequenceanimation {
+    to{stroke-dashoffset:0;}
+}
+@keyframes StartUpSequenceanimation2  {
+  from{fill: transparent;}
+  to{fill:black;}
+}
+
+
+.SectionOneProfile{
+  position: relative;
+  width: 100vw;
+  height:100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url(images/back1.png);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.profilephoto1{
+  width:500px;
+  height:500px;
+}
+.name1{
+  padding-top: 100px;
+  width: 500px;
+}
+.arrsec{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  align-items: center;
+}
+.arr{
+  width:200px;
+  padding-top: 50px;
+  opacity: 0;
+}
+.a1{
+  animation: arrow 2s ease-in-out 5s infinite;
+}
+.a2{
+  animation: arrow 2s ease-in-out 5.2s infinite;
+}
+.a3{
+  animation: arrow 2s ease-in-out 5.4s infinite;
+}
+
+
+@keyframes arrow {
+0%{opacity: 0;}
+50%{opacity: 0;}
+  75%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+
+
+.SectionTwo1{
+  position: relative;
+  width:100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.quickstats{
+  width:500px;
+}
+.aboutme{
+  width:500px;
+}
+.button1{
+  width: 250px;
+}
+.quickstatsadd path:nth-child(1){
+ stroke-dasharray: 900px;
+ stroke-dashoffset: 900px;
+    animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(2){
+ stroke-dasharray: 900px;
+ stroke-dashoffset: 900px;
+    animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(3){
+ stroke-dasharray: 900px;
+ stroke-dashoffset: 900px;
+    animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(4){
+ stroke-dasharray: 850px;
+ stroke-dashoffset: 850px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(5){
+ stroke-dasharray: 900px;
+ stroke-dashoffset: 900px;
+    animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(6){
+ stroke-dasharray: 900px;
+ stroke-dashoffset: 900px;
+     animation: StartUpSequenceanimation 2.5s ease-out forwards;
+}
+.quickstatsadd path:nth-child(7){
+ stroke-dasharray: 900px;
+ stroke-dashoffset: 900px;
+    animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(8){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(9){
+ stroke-dasharray: 900px;
+ stroke-dashoffset: 900px;
+    animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(10){
+ stroke-dasharray: 900px;
+ stroke-dashoffset: 900px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(11){
+ stroke-dasharray: 900px;
+ stroke-dashoffset: 900px;
+    animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(12){
+ stroke-dasharray: 1500px;
+ stroke-dashoffset: 1500px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(14){
+ stroke-dasharray: 1500px;
+ stroke-dashoffset: 1500px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(16){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+     animation: StartUpSequenceanimation 1.8s ease-out  forwards;
+}
+.quickstatsadd path:nth-child(18){
+ stroke-dasharray: 1000px;
+ stroke-dashoffset: 1000px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(20){
+ stroke-dasharray: 900px;
+ stroke-dashoffset: 900px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(22){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(24){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(26){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(28){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(30){
+ stroke-dasharray: 1065px;
+ stroke-dashoffset: 1065px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(32){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(34){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(36){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(38){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(40){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(42){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+.quickstatsadd path:nth-child(44){
+ stroke-dasharray: 700px;
+ stroke-dashoffset: 700px;
+     animation: StartUpSequenceanimation 1.8s ease-out forwards;
+}
+
+
+
+
+
+
+
+
+.statsoneimg{
+  position: relative;
+  width: 80%;
+}
+.aboutmetextdiv{
+  position: relative;
+  margin: 0 auto 0 auto;
+  padding-bottom: 150px;
+  width:80%;
+
+}
+
+.head1{
+  color: #C9D6DF;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  width:100%;
+  font-family: "Montserrat";
+}
+
+
+.aboutmepara{
+  color: #C9D6DF;
+  opacity: 0.8;
+  text-align: center;
+  font-size: 1rem;
+  width:100%;
+  line-height: 5rem;
+  font-family: "Montserrat";
+}
+.buttontext{
+  color: #C9D6DF;
+  opacity: 0.8;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+}
+
+.Mechatronics{
+  width: 700px;
+}
+.projects{
+  width:600px;
+}
+.contacts{
+  width:500px;
+}
+.contactimg1{
+  width: 200px;
+  padding: 50px;
+}
+
+.otherstuff{
+  width: 500px;
+}
